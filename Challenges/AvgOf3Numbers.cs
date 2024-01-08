@@ -16,7 +16,14 @@ public class AvgOf3Numbers
 
     private static int PrintAndGetInput(string message)
     {
+        int value = -1;
         Console.Write(message);
-        return int.Parse(Console.ReadLine());
+        bool success = int.TryParse(Console.ReadLine(), out var input);
+        if (success)
+        {
+            value = input;
+        }
+
+        return value;
     }
 }
