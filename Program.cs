@@ -1,5 +1,5 @@
 ﻿using CSharpIntroProg.Challenges;
 
-ChooseYourGear.Execute();
+RockPaperScissor.Execute();
 
 Console.ReadKey();

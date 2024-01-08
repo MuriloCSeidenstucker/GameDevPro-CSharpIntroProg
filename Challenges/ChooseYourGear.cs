@@ -4,8 +4,8 @@ public class ChooseYourGear
 {
     public static void Execute()
     {
-        PrintAndWait("Um apocalipse zumbi acabou de acontecer do nada na sua cidade");
-        PrintAndWait("Você começa a correr e pega tudo que vê pela frente ...");
+        Utils.PrintAndWait("Um apocalipse zumbi acabou de acontecer do nada na sua cidade");
+        Utils.PrintAndWait("Você começa a correr e pega tudo que vê pela frente ...");
         Console.WriteLine();
 
         string[] choices = new string[3];
@@ -36,11 +36,5 @@ public class ChooseYourGear
         }
 
         return value;
-    }
-
-    private static void PrintAndWait(string message)
-    {
-        Console.WriteLine(message);
-        Console.ReadKey();
     }
 }

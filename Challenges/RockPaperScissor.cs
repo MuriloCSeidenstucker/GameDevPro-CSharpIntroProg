@@ -11,10 +11,10 @@ public class RockPaperScissor
 
     public static void Execute()
     {
-        PrintAndWait($"Bem vindo ao {Options.Rock} {Options.Paper} {Options.Scissor} com uma IA!");
-        PrintAndWait("Esse é o meu território, então você não tem chance.");
-        PrintAndWait("(é sério, eu que fiz esse jogo)");
-        Interval();
+        Utils.PrintAndWait($"Bem vindo ao {Options.Rock} {Options.Paper} {Options.Scissor} com uma IA!");
+        Utils.PrintAndWait("Esse é o meu território, então você não tem chance.");
+        Utils.PrintAndWait("(é sério, eu que fiz esse jogo)");
+        Utils.Interval();
 
         Console.Write($"Escolha {Options.Rock} {Options.Paper} {Options.Scissor} --> ");
         bool success = Enum.TryParse<Options>(Console.ReadLine(), out var opt);
@@ -41,18 +41,5 @@ public class RockPaperScissor
         {
             Console.WriteLine($"Você não sabe jogar {Options.Rock} {Options.Paper} {Options.Scissor}?");
         }
-    }
-
-    private static void PrintAndWait(string message)
-    {
-        Console.WriteLine(message);
-        Console.ReadKey();
-    }
-
-    private static void Interval()
-    {
-        Console.WriteLine();
-        Console.WriteLine("-------------------------");
-        Console.WriteLine();
     }
 }
