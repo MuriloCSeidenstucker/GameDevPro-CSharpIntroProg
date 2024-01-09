@@ -1,5 +1,5 @@
 ﻿using CSharpIntroProg.Challenges;
 
-ItemStore.Execute();
+ItemStore2.Execute();
 
 Console.ReadKey();
